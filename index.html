@@ -1,14 +1,14 @@
-<p>Click the button to "fix" the old embed code</p>
+<p>汪報翻譯器</p>
 
-<textarea rows="10" cols="60" id="demo"></textarea>
+<textarea rows="30" cols="100" id="demo"></textarea>
 <br/>
 
 <script>
 function myFunction()
 {
-  var str=document.getElementById("demo").value; 
-  str.replace(/([\_\.a-zA-Z0-9\u4E00-\u9FA5]+)/g,"a")
-  document.getElementById("demo").value=str;
+  var s = document.getElementById("demo").value
+  var t = s.replace(/[\u4e00-\u9fa5^\u0021-\u007e]/ig, "汪")
+  document.getElementById("demo").value=t;
 }
 </script>
 

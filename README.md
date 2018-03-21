@@ -1,2 +1,0 @@
-# jybest.github.io
-website
