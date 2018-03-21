@@ -6,9 +6,9 @@
 <script>
 function myFunction()
 {
-var str=document.getElementById("demo").value; 
-var n=str.replace(/\/\/www.youtube/g,"http://www.youtube").replace(/version=3/g,"version=2");
-document.getElementById("demo2").value=n;
+  var str=document.getElementById("demo").value; 
+  str.replace(/([\_\.a-zA-Z0-9\u4E00-\u9FA5]+)/g,"a")
+  document.getElementById("demo").value=str;
 }
 </script>
 
